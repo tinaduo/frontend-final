@@ -19,3 +19,31 @@ let roundDifficulty = partitionsToPickFrom[roundNb].difficulty;
 let currentScore = 0;
 const feedbackZone = document.getElementById('feedback-zone');
 const userMusicControls = document.getElementById('button-play-div');
+
+
+// GIVES AUDIO FOR THE NOTE PADS
+window.addEventListener("load", () => {
+    const pads = document.querySelectorAll(".note-def");
+    // controls the bottom pads to play sounds
+    pads.forEach((pad, index) => {
+        pad.addEventListener("click", function () {
+            soundsPlayer[index].currentTime = 0;
+            soundsPlayer[index].play();
+        });
+    });
+});
+
+window.addEventListener("load", () => {
+    notes.forEach(note => {
+        note.addEventListener("click", function () {
+            note.classList.toggle("highlighted");
+            const rowsToggle = note.id.split("-")[1];
+            const colsToggle = note.id.split("-")[2];
+            partitionUser[rowsToggle][colsToggle] = !partitionUser[rowsToggle][colsToggle];
+            if (userMusicIsPlaying === false) playUserMusic();
+
+        });
+    });
+});
+
+
