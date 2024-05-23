@@ -4,8 +4,7 @@ const soundsAmbiance = document.querySelectorAll(".ambiance-sound");
 const notes = Array.from(document.querySelectorAll(".note"));
 const notesCols = Array.from(document.querySelectorAll(".notes-col"));
 const startOrListenButton = document.getElementById('start-or-listen-button');
-
-let partitionsToPickFrom = easyPartitions;
+let partitionsToPickFrom = partitions;
 let musicPlaying;
 let playerScore = 0;
 let roundNb = 0;
@@ -45,5 +44,23 @@ window.addEventListener("load", () => {
         });
     });
 });
+
+
+playAgain = (difficulty) => {
+    document.getElementById('end-game-board').style.display = 'none';
+    soundsAmbiance[2].pause();
+    clearFeedbackZone();
+    partitionsToPickFrom = (difficulty === 'easy') ? partitions : hardPartitions;
+    roundNb = 0;
+    playerScore = 0;
+    document.getElementById('score-span').innerText = `Score: 0`;
+    resetTime()
+    moveToNextRound();
+}
+
+
+setTimeout(() => {
+    document.getElementById('start-or-listen-button').appendChild(createStartButton());
+}, 5000);
 
 
