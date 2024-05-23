@@ -60,58 +60,6 @@ const partitions = [{
     }
 
 ]
-const easyPartitions = [{
-    name: '"Just The Kick"',
-    tempo: 120,
-    difficulty: 1,
-    time: 45,
-    notes: [
-        [true, false, false, false, false, false],
-        [false, false, false, false, false, false],
-        [true, false, false, false, false, false],
-        [false, false, false, false, false, false]
-    ]
-},
-{
-    name: '"Drop The Bass"',
-    tempo: 120,
-    difficulty: 2,
-    time: 45,
-    notes: [
-        [false, false, false, false, false, true],
-        [false, false, false, false, false, true],
-        [false, false, false, true, false, false],
-        [false, true, false, false, false, false]
-    ]
-},
-{
-    name: '"Rock You!"',
-    tempo: 60,
-    time: 45,
-    difficulty: 4,
-    notes: [
-        [true, false, false, false, false, false],
-        [true, false, false, false, false, false],
-        [false, true, false, false, true, false],
-        [false, false, false, false, false, false]
-    ]
-},
-{
-    name: '"Funky"',
-    tempo: 150,
-    time: 60,
-    difficulty: 4,
-    notes: [
-        [true, false, true, false, false, true],
-        [false, false, true, false, false, false],
-        [true, false, true, false, true, false],
-        [false, false, true, false, true, true]
-    ]
-}
-
-]
-
-
 const hardPartitions = [{
     name: '"Getting Started"',
     tempo: 120,
