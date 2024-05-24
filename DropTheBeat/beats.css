@@ -17,7 +17,7 @@
 body {
   height: 100vh;
   font-family: 'PP  Neuebit';
-  background-image: url('assets/images/BG1.png');
+  background-image: url('../assets/images/BG1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,4 +136,25 @@ header p {
   font-size: 20px;
   cursor: pointer;
   color: white;
+}
+
+.team {
+  display: flex;
+  justify-content: flex-start; /* Aligns the link to the left */
+  align-items: flex-start; /* Keeps the link at the top */
+  position: absolute; /* Positions the .team div absolutely within the .mainContainer */
+  top: 0;
+  left: 0;
+  padding: 20px; /* Adds some padding around the link */
+  font-family: 'PP Agrandir'; 
+}
+
+.team a {
+  text-decoration: none; /* Removes underline */
+  color: white; /* Sets text color to white */
+  font-size: 25px;
+    text-shadow:
+    3px 3px 6px #FF25C2, 
+    0 0 10px #FF25C2,  
+    0 0 20px #FF25C2;
 }
