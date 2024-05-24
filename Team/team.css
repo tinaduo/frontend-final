@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'PP Mondwest';
+    src: url('/assets/fonts/PPMondwest-Regular.otf');
+}
+
+@font-face {
+    font-family: 'PP  Neuebit';
+    src: url('/assets/fonts/PPNeueBit-Bold.otf');
+}
+
+@font-face {
+    font-family: 'PP Neue World';
+    src: url('/assets/fonts/PPNeueWorld-Regular.otf');
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('/assets/fonts/PPAgrandir-NarrowRegular.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'PP  Neuebit';
+  background-image: url('../assets/images/BG2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: "PP Neue World";
+    color: white;
+    font-size: 100px;
+    text-shadow:
+        -1px 1px 0 #FF25C2,
+        0 0 60px #FF25C2, 
+        0 0 90px #FF25C2; 
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.childContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.description {
+    font-family: 'PP Agrandir';
+    font-size: 20px;
+    color: white;
+    width: 990px;
+    text-align: center;
+}
+
+.teamBtns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-top: 90px;
+    color: white;
+    font-family: 'PP Agrandir';
+    font-size: 30px;
+}
+
+.tina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.tina > :nth-child(2) {
+    height: 270px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 2px;
+    background-color: #2D25A0;
+    border-radius: 15px;
+}
+
+.tina > :nth-child(3) {
+    height: 50px;
+    width: 200px;
+    border: solid white 2px;
+    border-radius: 30px;
+    background-color: #A05097;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "PP Mondwest";
+}
+
+.chels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.chels > :nth-child(2) {
+    height: 270px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 2px;
+    background-color: #FB4461;
+    border-radius: 15px;
+}
+
+.chels > :nth-child(3) {
+    height: 50px;
+    width: 200px;
+    border: solid white 2px;
+    border-radius: 30px;
+    background-color: #A05097;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "PP Mondwest";
+}
+
+.keona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.keona > :nth-child(2) {
+    height: 270px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 2px;
+    background-color: #2100C0;;
+    border-radius: 15px;
+}
+
+.keona > :nth-child(3) {
+    height: 50px;
+    width: 200px;
+    border: solid white 2px;
+    border-radius: 30px;
+    background-color: #A05097;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "PP Mondwest";
+}
+
+.home {
+    display: flex;
+    justify-content: flex-start; /* Aligns the link to the left */
+    align-items: flex-start; /* Keeps the link at the top */
+    position: absolute; /* Positions the .team div absolutely within the .mainContainer */
+    top: 0;
+    left: 0;
+    padding: 20px; /* Adds some padding around the link */
+    font-family: 'PP Agrandir'; 
+  }
+
+  .click-me:active {
+    transform: scale(0.9);
+  }
+
+  .click-me {
+    cursor: pointer;
+  }
+  
+  .home a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color to white */
+    font-size: 25px;
+      text-shadow:
+      3px 3px 6px #FF25C2, 
+      0 0 10px #FF25C2,  
+      0 0 20px #FF25C2;
+  }
+  

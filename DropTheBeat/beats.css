@@ -138,7 +138,7 @@ header p {
   color: white;
 }
 
-.team {
+.home {
   display: flex;
   justify-content: flex-start; /* Aligns the link to the left */
   align-items: flex-start; /* Keeps the link at the top */
@@ -149,7 +149,7 @@ header p {
   font-family: 'PP Agrandir'; 
 }
 
-.team a {
+.home a {
   text-decoration: none; /* Removes underline */
   color: white; /* Sets text color to white */
   font-size: 25px;
