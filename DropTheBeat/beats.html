@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Drop the Beat</title>
+    <link rel="stylesheet" href="beats.css" />
+</head>
+  <body>
+    <!-- MAIN SCREEN -->
+    <div class="mainContainer">
+      <header>
+        <h1>Drop the Beat</h1>
+      </header>
+      <div class="generalSectionUser">
+        <div id="user-music-controls">
+          <p id="playButton">
+            <button onclick="playUserMusic()" class="btnControl" id="btn-play">
+              Play
+            </button>
+          </p>
+        </div>
+        <div class="notesPad">
+          <div>
+            <div class="noteName">
+              Kick
+              <audio class="sound" src="assets/sounds/kit1/kick2.wav"></audio>
+            </div>
+            <div class="noteName">
+              Snare
+              <audio class="sound" src="assets/sounds/kit1/snare2.wav"></audio>
+            </div>
+            <div class="noteName">
+              Hi-hat
+              <audio class="sound" src="assets/sounds/kit1/hi-hat3.wav"></audio>
+            </div>
+            <div class="noteName">
+              Tom
+              <audio class="sound" src="assets/sounds/kit1/tom2.wav"></audio>
+            </div>
+            <div class="noteName">
+              Clap
+              <audio class="sound" src="assets/sounds/kit1/clap1.wav"></audio>
+            </div>
+            <div class="noteName">
+              Bass
+              <audio class="sound" src="assets/sounds/kit1/bass1.wav"></audio>
+            </div>
+          </div>
+          <div class="notesCol">
+            <div class="note" id="note-0-0"></div>
+            <div class="note" id="note-0-1"></div>
+            <div class="note" id="note-0-2"></div>
+            <div class="note" id="note-0-3"></div>
+            <div class="note" id="note-0-4"></div>
+            <div class="note" id="note-0-5"></div>
+          </div>
+          <div class="notesCol">
+            <div class="note" id="note-1-0"></div>
+            <div class="note" id="note-1-1"></div>
+            <div class="note" id="note-1-2"></div>
+            <div class="note" id="note-1-3"></div>
+            <div class="note" id="note-1-4"></div>
+            <div class="note" id="note-1-5"></div>
+          </div>
+          <div class="notesCol">
+            <div class="note" id="note-2-0"></div>
+            <div class="note" id="note-2-1"></div>
+            <div class="note" id="note-2-2"></div>
+            <div class="note" id="note-2-3"></div>
+            <div class="note" id="note-2-4"></div>
+            <div class="note" id="note-2-5"></div>
+          </div>
+          <div class="notesCol">
+            <div class="note" id="note-3-0"></div>
+            <div class="note" id="note-3-1"></div>
+            <div class="note" id="note-3-2"></div>
+            <div class="note" id="note-3-3"></div>
+            <div class="note" id="note-3-4"></div>
+            <div class="note" id="note-3-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+    <script src="src/sections.js"></script>
+    <script src="src/setup.js"></script>
+    <script src="src/main.js"></script>
+</html>

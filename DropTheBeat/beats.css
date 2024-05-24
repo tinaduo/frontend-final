@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'PP Mondwest';
+    src: url('/assets/fonts/PPMondwest-Regular.otf');
+}
+
+@font-face {
+    font-family: 'PP  Neuebit';
+    src: url('/assets/fonts/PPNeueBit-Bold.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'PP  Neuebit';
+  background-image: url('assets/images/BG1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  margin: 50px 0 30px 0;
+  text-align: center;
+  font-family: "PP Mondwest";
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-family: "PP Mondwest", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+header p {
+  font-size: 20px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.generalSectionUser {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+.noteName:active {
+  transform: scale(0.9);
+}
+
+.notesCol {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.noteName{
+  margin: 10px;
+  margin-right: 25px;
+  height: 50px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.642);
+  font-family: "PP Mondwest", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(30, 43, 153);
+}
+
+.note {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 8.79px;
+}
+
+.notesPad {
+  width: 700px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid white 2px;
+  box-shadow:  0 0 20px rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.099);
+}
+
+.notesColHighlighted {
+  background-color: #ff1be464;
+  opacity: 90%;
+}
+
+.highlighted {
+  background-color: #FF1BE4;
+  transform: scale(0.9);
+  transition: ease;
+  transition-duration: 0.3s;
+}
+
+.btnControl {
+  width: 220px;
+  height: 40px;
+  border: solid 3px white;
+  box-shadow: 0 0 50px rgba(160, 80, 151, 0.9);
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.401);
+  font-family: "PP Mondwest", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
