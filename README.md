@@ -1,4 +1,4 @@
-# Whack-a-Track :Frontend Final Project
+# Whack-a-Track : Frontend Final Project
 “Whack-a-track” combines classic arcade fun with creative music mixing in a user-friendly platform. Created by BCIT’s Year 1 D3 students for our web development course, this website features four main areas: the home page,  two separate games—’ whack-a-mole’ and ‘drop the beat’, as well as the ‘meet the team’ page. Each game provides a unique interactive experience, engaging users with everything from quick reflex tests to DIY music sessions. 
 
 ## Members
